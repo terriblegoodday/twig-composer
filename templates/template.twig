@@ -1,0 +1,12 @@
+<h1>Simple Twig Checklist Application</h1>
+
+<ul>
+    {% for task in tasks %}
+        <li>{{ task.description }}</li>
+    {% endfor %}
+</ul>
+
+<form method="GET">
+    <input name="description" placeholder="Task description">
+    <button type="submit">Add</button>
+</form>
